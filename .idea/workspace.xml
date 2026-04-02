@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d7739d3-e307-4922-a7c9-e51fcab5a5f8" name="Changes" comment="&#10;UC9: Group Bogies by Type (Collectors.groupingBy)">
-      <change afterPath="$PROJECT_DIR$/test/TrainConsistManagementAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainConsistManagementApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/UC10",
+    "git-widget-placeholder": "feature/UC11",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -78,6 +77,14 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -150,6 +157,7 @@
     <MESSAGE value="UC6: Map Bogie to Capacity (HashMap)" />
     <MESSAGE value="UC8: Filter Passenger Bogies Using Streams" />
     <MESSAGE value="&#10;UC9: Group Bogies by Type (Collectors.groupingBy)" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;UC9: Group Bogies by Type (Collectors.groupingBy)" />
+    <MESSAGE value="UC10: Count Total Seats in Train (reduce)" />
+    <option name="LAST_COMMIT_MESSAGE" value="UC10: Count Total Seats in Train (reduce)" />
   </component>
 </project>

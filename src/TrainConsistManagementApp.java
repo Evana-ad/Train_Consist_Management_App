@@ -1,47 +1,42 @@
-import java.util.*;
-import java.util.stream.*;
-
-class Bogie {
-    String name;
-    int capacity;
-
-    Bogie(String name, int capacity) {
-        this.name = name;
-        this.capacity = capacity;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getCapacity() {
-        return capacity;
-    }
-
-    @Override
-    public String toString() {
-        return name + " -> " + capacity + " seats";
-    }
-}
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TrainConsistManagementApp {
 
+    public static boolean validateTrainID(String trainID) {
+        String trainPattern = "TRN-\\d{4}";
+        Pattern pattern = Pattern.compile(trainPattern);
+        Matcher matcher = pattern.matcher(trainID);
+        return matcher.matches();
+    }
+
+    public static boolean validateCargoCode(String cargoCode) {
+        String cargoPattern = "PET-[A-Z]{2}";
+        Pattern pattern = Pattern.compile(cargoPattern);
+        Matcher matcher = pattern.matcher(cargoCode);
+        return matcher.matches();
+    }
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        List<Bogie> bogies = new ArrayList<>();
+        System.out.print("Enter Train ID (format TRN-1234): ");
+        String trainID = sc.nextLine();
+        if (validateTrainID(trainID)) {
+            System.out.println("Valid Train ID!");
+        } else {
+            System.out.println("Invalid Train ID!");
+        }
 
-        bogies.add(new Bogie("Sleeper", 72));
-        bogies.add(new Bogie("AC Chair", 56));
-        bogies.add(new Bogie("First Class", 24));
-        bogies.add(new Bogie("Sleeper", 72));
+        System.out.print("Enter Cargo Code (format PET-AB): ");
+        String cargoCode = sc.nextLine();
+        if (validateCargoCode(cargoCode)) {
+            System.out.println("Valid Cargo Code!");
+        } else {
+            System.out.println("Invalid Cargo Code!");
+        }
 
-        System.out.println("Train Bogies:");
-        bogies.forEach(System.out::println);
-
-        int totalSeats = bogies.stream()
-                .map(b -> b.getCapacity())
-                .reduce(0, Integer::sum);
-
-        System.out.println("\nTotal Seating Capacity of Train = " + totalSeats);
+        sc.close();
     }
 }
