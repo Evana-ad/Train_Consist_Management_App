@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 class Bogie {
@@ -17,24 +16,25 @@ public class TrainConsistManagementApp {
     public static void main(String[] args) {
 
         System.out.println("=== Train Consist Management App ===");
-        System.out.println("\n--- Filtering High Capacity Bogies ---");
+        System.out.println("\n--- Grouping Bogies by Type ---");
 
         List<Bogie> bogies = new ArrayList<>();
 
         bogies.add(new Bogie("Sleeper", 72));
         bogies.add(new Bogie("AC Chair", 60));
+        bogies.add(new Bogie("Sleeper", 72));
         bogies.add(new Bogie("First Class", 40));
-        bogies.add(new Bogie("Luxury Coach", 80));
+        bogies.add(new Bogie("AC Chair", 60));
 
-        List<Bogie> highCapacityBogies =
+        Map<String, List<Bogie>> groupedBogies =
                 bogies.stream()
-                        .filter(b -> b.capacity > 60)
-                        .collect(Collectors.toList());
+                        .collect(Collectors.groupingBy(b -> b.name));
 
-        System.out.println("Bogies with capacity > 60:");
-
-        for (Bogie b : highCapacityBogies) {
-            System.out.println(b.name + " -> " + b.capacity + " seats");
+        for (String type : groupedBogies.keySet()) {
+            System.out.println(type + " Bogies:");
+            for (Bogie b : groupedBogies.get(type)) {
+                System.out.println("  Capacity: " + b.capacity);
+            }
         }
 
         System.out.println("\nProgram ready for next operations...");
