@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d7739d3-e307-4922-a7c9-e51fcab5a5f8" name="Changes" comment="&#10;UC9: Group Bogies by Type (Collectors.groupingBy)">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainConsistManagementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TrainConsistManagementAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TrainConsistManagementAppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GoodsBogieSafetyApp.executor": "Run",
     "Application.TrainConsistApp.executor": "Run",
     "Application.TrainConsistManagementApp.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -68,7 +70,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/UC11",
+    "git-widget-placeholder": "feature/UC12",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -148,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775105066419</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UC11: Validate Train ID &amp; Cargo Codes (Regex)">
+      <option name="closed" value="true" />
+      <created>1775107936696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775107936696</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
